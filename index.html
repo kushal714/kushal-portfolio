@@ -5,70 +5,223 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Kushal S S — Computer Science Engineering student and aspiring software developer. Explore skills, education and projects.">
   <meta name="theme-color" content="#173b67">
+
   <title>Kushal S S | Personal Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Correct CSS path -->
   <link rel="stylesheet" href="style.css">
+
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script defer src="js/script.js"></script>
+
+  <!-- Correct JavaScript path -->
+  <script defer src="script.js"></script>
 </head>
+
 <body>
+
   <header class="site-header">
     <nav class="navbar container" aria-label="Main navigation">
+
       <a class="brand" href="index.html">KUSHAL S S</a>
-      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <ul class="nav-links">
-        <li><a class="active" href="index.html">Home</a></li><li><a href="resume.html">Resume</a></li>
-        <li><a href="biodata.html">Bio-data</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="biodata.html">Bio-data</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
+
       <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">☾</button>
+
     </nav>
   </header>
 
   <main>
+
     <section class="hero container">
+
       <div class="hero-copy reveal">
+
         <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
         <h1>Hi, I'm <span>KUSHAL S S</span></h1>
+
         <h2>Computer Science Engineering Student</h2>
-        <p class="hero-text">Currently pursuing a Bachelor of Engineering in Computer Science and Engineering, with an interest in software development and building practical technology solutions.</p>
+
+        <p class="hero-text">
+          Currently pursuing a Bachelor of Engineering in Computer Science and Engineering, with an interest in software development and building practical technology solutions.
+        </p>
+
         <div class="hero-actions">
+
           <a class="button button-primary" href="resume.html">Download Resume</a>
+
           <a class="button button-outline" href="projects.html">View Projects</a>
-          <a class="text-link" href="contact.html">Contact Me <span aria-hidden="true">→</span></a>
+
+          <a class="text-link" href="contact.html">
+            Contact Me <span aria-hidden="true">→</span>
+          </a>
+
         </div>
-        <div class="hero-meta"><span>📍 Puttur, Karnataka</span><span>✉ <a href="mailto:9686kushal@gmail.com">9686kushal@gmail.com</a></span></div>
+
+        <div class="hero-meta">
+          <span>📍 Puttur, Karnataka</span>
+          <span>✉ <a href="mailto:9686kushal@gmail.com">9686kushal@gmail.com</a></span>
+        </div>
+
       </div>
+
       <div class="hero-photo-wrap reveal">
-        <div class="photo-ring"><img src="assets/profile-photo.jpeg" alt="Portrait of Kushal S S"></div>
+
+        <div class="photo-ring">
+          <!-- Correct profile picture path -->
+          <img src="profile-photo.jpeg" alt="Portrait of Kushal S S">
+        </div>
+
         <span class="photo-caption">Computer Science & Engineering</span>
+
       </div>
+
     </section>
 
     <section class="quick-facts section-soft">
+
       <div class="container fact-grid">
-        <article class="fact-card reveal"><span class="fact-icon">🎓</span><strong>5th Semester</strong><span>Current academic year</span></article>
-        <article class="fact-card reveal"><span class="fact-icon">📊</span><strong>7.5 CGPA</strong><span>Overall current CGPA</span></article>
-        <article class="fact-card reveal"><span class="fact-icon">💻</span><strong>5 Languages</strong><span>Programming fundamentals</span></article>
-        <article class="fact-card reveal"><span class="fact-icon">🚀</span><strong>1 Project</strong><span>Currently in development</span></article>
+
+        <article class="fact-card reveal">
+          <span class="fact-icon">🎓</span>
+          <strong>5th Semester</strong>
+          <span>Current academic year</span>
+        </article>
+
+        <article class="fact-card reveal">
+          <span class="fact-icon">📊</span>
+          <strong>7.5 CGPA</strong>
+          <span>Overall current CGPA</span>
+        </article>
+
+        <article class="fact-card reveal">
+          <span class="fact-icon">💻</span>
+          <strong>5 Languages</strong>
+          <span>Programming fundamentals</span>
+        </article>
+
+        <article class="fact-card reveal">
+          <span class="fact-icon">🚀</span>
+          <strong>1 Project</strong>
+          <span>Currently in development</span>
+        </article>
+
       </div>
+
     </section>
 
     <section class="section container">
-      <div class="section-heading reveal"><p class="eyebrow">WHAT I WORK WITH</p><h2>Technical Skills</h2><p>A snapshot of the tools and technologies I am learning and practising.</p></div>
-      <div class="skill-preview-grid">
-        <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-symbol">C</span><h3>Programming</h3></div><p>C · C++ · Java · Python · JavaScript</p><span class="level-pill">Beginner level</span></article>
-        <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-symbol">⌘</span><h3>Web Development</h3></div><p>HTML · CSS · JavaScript</p><span class="level-pill">Beginner level</span></article>
-        <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-symbol">▤</span><h3>Databases</h3></div><p>MySQL · SQL · MongoDB</p><span class="level-pill">Beginner level</span></article>
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">WHAT I WORK WITH</p>
+
+        <h2>Technical Skills</h2>
+
+        <p>A snapshot of the tools and technologies I am learning and practising.</p>
+
       </div>
-      <div class="center-action"><a class="button button-outline" href="resume.html#skills">Explore All Skills</a></div>
+
+      <div class="skill-preview-grid">
+
+        <article class="skill-card reveal">
+
+          <div class="skill-card-top">
+            <span class="skill-symbol">C</span>
+            <h3>Programming</h3>
+          </div>
+
+          <p>C · C++ · Java · Python · JavaScript</p>
+
+          <span class="level-pill">Beginner level</span>
+
+        </article>
+
+        <article class="skill-card reveal">
+
+          <div class="skill-card-top">
+            <span class="skill-symbol">⌘</span>
+            <h3>Web Development</h3>
+          </div>
+
+          <p>HTML · CSS · JavaScript</p>
+
+          <span class="level-pill">Beginner level</span>
+
+        </article>
+
+        <article class="skill-card reveal">
+
+          <div class="skill-card-top">
+            <span class="skill-symbol">▤</span>
+            <h3>Databases</h3>
+          </div>
+
+          <p>MySQL · SQL · MongoDB</p>
+
+          <span class="level-pill">Beginner level</span>
+
+        </article>
+
+      </div>
+
+      <div class="center-action">
+        <a class="button button-outline" href="resume.html#skills">Explore All Skills</a>
+      </div>
+
     </section>
 
-    <section class="cta-section"><div class="container cta-inner reveal"><div><p class="eyebrow">LET'S CONNECT</p><h2>Have an opportunity or idea?</h2><p>Feel free to get in touch.</p></div><a class="button button-light" href="contact.html">Get in Touch <span aria-hidden="true">→</span></a></div></section>
+    <section class="cta-section">
+
+      <div class="container cta-inner reveal">
+
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Have an opportunity or idea?</h2>
+          <p>Feel free to get in touch.</p>
+        </div>
+
+        <a class="button button-light" href="contact.html">
+          Get in Touch <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </section>
+
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 KUSHAL S S. All Rights Reserved.</p><p>Designed &amp; Developed by KUSHAL S S</p></div></footer>
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>© 2026 KUSHAL S S. All Rights Reserved.</p>
+
+      <p>Designed &amp; Developed by KUSHAL S S</p>
+
+    </div>
+
+  </footer>
+
   <button class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
 </body>
 </html>
