@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic project portfolio of Kushal S S.">
+  <meta name="description" content="Contact Kushal S S.">
 
-  <title>Projects | Kushal S S</title>
+  <title>Contact | Kushal S S</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,8 +43,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="biodata.html">Bio-data</a></li>
-        <li><a class="active" href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
       </ul>
 
       <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
@@ -61,69 +61,152 @@
 
     <div class="page-heading reveal">
 
-      <p class="eyebrow">WHAT I'M BUILDING</p>
+      <p class="eyebrow">GET IN TOUCH</p>
 
-      <h1>Projects</h1>
+      <h1>Contact Me</h1>
 
-      <p>Academic work and practical learning in progress.</p>
+      <p>
+        For professional opportunities, collaboration or a conversation, feel free to reach out.
+      </p>
 
     </div>
 
-    <!-- Project Card -->
+    <div class="contact-layout">
 
-    <article class="project-card reveal">
+      <!-- Contact Information -->
 
-      <div class="project-number">01</div>
+      <section class="contact-info content-card reveal">
 
-      <div class="project-content">
+        <h2>Contact Information</h2>
 
-        <div class="project-topline">
+        <a class="contact-row" href="mailto:9686kushal@gmail.com">
 
-          <span class="status-pill">
-            <span class="status-dot"></span>
-            Development in Progress
+          <span class="contact-icon">✉</span>
+
+          <span>
+            <small>Email</small>
+            <strong>9686kushal@gmail.com</strong>
           </span>
 
-          <span class="project-type">Academic Mini Project</span>
+        </a>
+
+        <a class="contact-row" href="tel:+918073703520">
+
+          <span class="contact-icon">☎</span>
+
+          <span>
+            <small>Phone</small>
+            <strong>+91 8073703520</strong>
+          </span>
+
+        </a>
+
+        <div class="contact-row">
+
+          <span class="contact-icon">⌖</span>
+
+          <span>
+            <small>Location</small>
+            <strong>Puttur, Karnataka, India</strong>
+          </span>
 
         </div>
 
-        <h2>Online Harassment Detection System</h2>
+        <a class="contact-row"
+           href="https://www.linkedin.com/in/kushal-ss-b0852332a/"
+           target="_blank"
+           rel="noopener noreferrer">
 
-        <p>
-          Developing an NLP-based system to detect threatening, abusive and harassing messages on online platforms using text preprocessing, TF-IDF feature extraction and machine learning classification techniques such as SVM and Logistic Regression.
+          <span class="contact-icon">in</span>
+
+          <span>
+            <small>LinkedIn</small>
+            <strong>View LinkedIn Profile</strong>
+          </span>
+
+        </a>
+
+      </section>
+
+      <!-- Contact Form -->
+
+      <section class="content-card reveal">
+
+        <h2>Send a Message</h2>
+
+        <p class="form-intro">
+          The form will be ready to send messages after the Web3Forms access key is configured.
         </p>
 
-        <div class="tag-list">
+        <form id="contact-form" class="contact-form">
 
-          <span>Python</span>
-          <span>Natural Language Processing</span>
-          <span>Machine Learning</span>
-          <span>TF-IDF</span>
-          <span>SVM</span>
-          <span>Logistic Regression</span>
+          <label for="name">Your Name</label>
 
-        </div>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+            minlength="2"
+          >
 
-        <div class="project-foot">
+          <label for="email">Email Address</label>
 
-          <span>Individual academic project</span>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          >
 
-          <span>Currently in development</span>
+          <label for="subject">Subject</label>
 
-        </div>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            placeholder="What is this regarding?"
+            required
+          >
 
-      </div>
+          <label for="message">Message</label>
 
-    </article>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message..."
+            required
+            minlength="10"
+          ></textarea>
 
-    <!-- Future Projects -->
+          <!-- Web3Forms Configuration -->
 
-    <div class="empty-project-note reveal">
+          <input
+            type="hidden"
+            name="access_key"
+            value="ADD_YOUR_WEB3FORMS_ACCESS_KEY"
+          >
 
-      <span>✦</span>
+          <input
+            type="hidden"
+            name="from_name"
+            value="Kushal S S Portfolio"
+          >
 
-      <p>More projects will be added here as they are developed.</p>
+          <button class="button button-primary" type="submit">
+            Send Message <span aria-hidden="true">→</span>
+          </button>
+
+          <p class="form-status" id="form-status" role="status" aria-live="polite">
+            Contact form is not activated yet. Add your Web3Forms access key to enable message delivery.
+          </p>
+
+        </form>
+
+      </section>
 
     </div>
 
